@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <title>Questionários</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hamburguer Daora</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="..//home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Cadastro/cadastro.html">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../entre/entrar.html">Entre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="">
+        <br>
+        <br>
+        <h2 class="text-center text-warning">Questionário</h2>
+        <br>
+        <label class="text-warning" for="selecao">Quantos questionário você quer criar?</label>
+        <select name="selecao" id="selecao">
+            <option value="0" id="zero">0</option>
+            <option value="1" id="um">1</option>
+            <option value="2" id="dois">2</option>
+            <option value="3" id="tres">3</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <div class="col-md-4 offset-md-4 shadow-lg p-3 mb-5 bg-body rounded ">
+        <h2 class="text-center text-warning">Crie até 5 perguntas e respostas</h2>
+        <br>
+        <form>
+            <label> Digite a 1ª pergunta </label> <br>
+            <input id="pergunta" type="text" placeholder="Digite a pergunta:"> <br>
+            <label> Digite a 1ª resposta </label> <br>
+            <input id="resposta" type="text" placeholder="Digite a resposta:"> <br>
+            <br>
+
+            <label> Digite a 2ª pergunta </label> <br>
+            <input id="pergunta" type="text" placeholder="Digite a pergunta:"> <br>
+            <label> Digite a resposta </label> <br>
+            <input id="resposta" type="text" placeholder="Digite a resposta:"> <br>
+            <br>
+            <label> Digite a 3ª pergunta </label> <br>
+            <input id="pergunta" type="text" placeholder="Digite a pergunta:"> <br>
+            <label> Digite a resposta </label> <br>
+            <input id="resposta" type="text" placeholder="Digite a resposta:"> <br>
+            <br>
+            <label> Digite a 4ª pergunta </label> <br>
+            <input id="pergunta" type="text" placeholder="Digite a pergunta:"> <br>
+            <label> Digite a resposta </label><br>
+            <input id="resposta" type="text" placeholder="Digite a resposta:"> <br>
+            <br>
+            <label> Digite a 5ª pergunta </label><br>
+            <input id="pergunta" type="text" placeholder="Digite a pergunta:"> <br>
+            <label> Digite a resposta </label><br>
+            <input id="resposta" type="text" placeholder="Digite a resposta:"> <br>
+            <br>
+            <button class="btn btn-warning" onclick="salvar()">Enviar</button>
+            <button class="btn btn-warning" type="reset"> Limpar </button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="col-md-6 offset-md-6 shadow-lg p-3 mb-5 bg-body rounded">
+        <button class="btn btn-warning">
+            <p id="local">A sua localização em Latitude e Longitude!</p>
+            <p id="x"></p>
+        </button>
+    </div>
+    <br>
+    <footer>
+        <div class="card text-center  bg-warning">
+            <div class="card-body">
+                <p class="card-text text-white">Desenvolvido por Katielen Fernandes de Jesus.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

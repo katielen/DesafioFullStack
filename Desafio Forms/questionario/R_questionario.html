@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="./js/form.js"></script>
+    <title>Questionários</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Hamburguer Daora</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="..//home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Cadastro/cadastro.html">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login/login.html">Entre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <div class="col-md-4 offset-md-4 shadow-lg p-3 mb-5 bg-body rounded ">
+        <h3 class="text-center text-warning"> Breve pesquisa sobre hamburguer</h3>
+        <br>
+
+        <form class="text-center">
+
+            <label for="pergunta"> Qual o melhor pão para o seu hambúrguer? </label> <br>
+            <input for="resposta" id="resp1" type="text" placeholder="Digite a resposta:"> <br>
+
+            <label for="pergunta"> Você gosta de cebola no seu hambúrguer? </label><br>
+            <input for="resposta" id="resp2" type="text" placeholder="Digite a resposta:"> <br>
+
+            <label for="pergunta"> Você gosta de picles? </label><br>
+            <input for="resposta" id="resp3" type="text" placeholder="Digite a resposta:"> <br>
+
+            <label for="pergunta"> Prefere a hamburgueria com ou sem estacionamento? </label><br>
+            <input for="resposta" id="resp4" type="text" placeholder="Digite a resposta:"> <br>
+
+            <label for="pergunta"> Quais bebidas você prefere de acompanhamento no seu hambúrguer? </label><br>
+            <input for="resposta" id="resp5" type="text" placeholder="Digite a resposta:"> <br>
+
+            <label for="pergunta"> Quais seu hambúrguer favorito? </label><br>
+            <input for="resposta" id="resp6" type="text" placeholder="Digite a resposta:"> <br>
+
+            <label for="pergunta"> Quais a sua hamburgueria favorita? </label><br>
+            <input for="resposta" id="resp7" type="text" placeholder="Digite a resposta:"> <br>
+            <br>
+            <button class="btn btn-warning" type=" button" onclick="SalvarForm()">Enviar</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="col-md-6 offset-md-6 shadow-lg p-3 mb-5 bg-body rounded">
+        <button class="btn btn-warning" onclick="getLocation()">
+            <p id="local">A sua localização em Latitude e Longitude</p>
+            <p id="x"></p>
+        </button>
+    </div>
+    <br>
+    <div>
+        <div class="modal col-md-4 offset-md-4 shadow-lg p-3 mb-5 bg-body rounded" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"></h5>Respostas de Questionários</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Respostas de Questionários</h4>
+                        <label for="pergunta">Qual Questionário você respondeu?</label>
+                        <select name="selecao" id="selecao">
+                            <option for="resposta" value="0" id="zero">0</option>
+                            <option for="resposta" value="1" id="um">1</option>
+                            <option for="resposta" value="2" id="dois">2</option>
+                            <option for="resposta" value="3" id="tres">3</option>
+                            <button class="btn btn-warning" type=" button" onclick="SalvarForm()">Enviar</button>
+                        </select>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <br>
+        <div class="card text-center bg-warning  ">
+            <div class="card-body">
+                <p class="card-text text-white">Desenvolvido por Katielen Fernandes de Jesus.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
